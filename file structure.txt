@@ -1,0 +1,38 @@
+ mentor-mentee-backend/
+ ├── main.py          # Main FastAPI application
+ ├── routers/         # API route handlers
+ │   ├── __init__.py  # Makes 'routers' a Python package
+ │   ├── auth.py      # Authentication routes (login, register)
+ │   ├── users.py     # User management routes
+ │   ├── mentors.py   # Mentor management routes
+ │   ├── mentees.py   # Mentee management routes
+ │   ├── courses.py   # Course management routes
+ │   ├── mentorships.py # Mentorship management routes
+ │   ├── reports.py   # Progress report routes
+ │   ├── meetings.py  # Meeting management routes
+ │   ├── skills.py    # Skill management routes
+ │   ├── domains.py   # Domain management routes
+ │   └── admin.py     # Admin routes
+ ├── models/          # SQLAlchemy database models
+ │   ├── __init__.py  # Makes 'models' a Python package
+ │   ├── users.py     # User model
+ │   ├── skills.py    # Skill model
+ │   ├── domains.py   # Domain model
+ │   ├── courses.py   # Course model
+ │   ├── mentorships.py # Mentorship model
+ │   ├── reports.py   # Progress report model
+ │   ├── meetings.py  # Meeting model
+ │   └── meeting_agenda_templates.py # Meeting agenda template model
+ ├── schemas/         # Pydantic data schemas
+ │   ├── __init__.py  # Makes 'schemas' a Python package
+ │   ├── users.py     # User schemas (create, read, update)
+ │   ├── skills.py    # Skill schemas
+ │   ├── domains.py   # Domain schemas
+ │   ├── courses.py   # Course schemas
+ │   ├── mentorships.py # Mentorship schemas
+ │   ├── reports.py   # Progress report schemas
+ │   ├── meetings.py  # Meeting schemas
+ │   └── meeting_agenda_templates.py # Meeting agenda template schemas
+ ├── database.py      # Database connection and session management
+ ├── oauth2.py        # JWT authentication logic
+ └── utils.py         # Helper functions

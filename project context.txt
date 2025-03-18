@@ -1,0 +1,41 @@
+# Project Context Summary
+
+This file summarizes the development process for the Mentor-Mentee application, including the backend (FastAPI) and frontend (React) components.
+
+## Project Goal
+
+To build a Mentor-Mentee application with features for user authentication, profile management, course management, mentorship application, progress tracking, and meeting scheduling.
+
+## Technologies Used
+
+*   Frontend: React.js (with TypeScript)
+*   Backend: FastAPI (Python)
+*   Database: PostgreSQL (with SQLAlchemy ORM)
+*   Authentication: JWT (JSON Web Tokens)
+*   UI Library: Material UI
+
+## Current Status
+
+The backend (FastAPI) development is mostly complete. All the necessary routers (auth, users, mentors, mentees, courses, mentorships, reports, meetings, skills, domains, admin) have been created and implemented.
+
+The frontend (React) development has started. The basic project structure is set up, and the authentication flow (login, registration) is being implemented.
+
+## Key Issues and Solutions
+
+*   **ImportError:** Encountered `ImportError` due to relative imports. The solution was to switch to absolute imports (e.g., `from mentor_mentee_backend import models` instead of `from . import models`).
+*   **"is not a module" Error:** Encountered "is not a module" error in React/TypeScript project, indicating missing export statements. The solution was to ensure that all necessary components are exported correctly.
+
+## Next Steps
+
+1.  Continue testing the authentication flow in the React frontend.
+2.  Start building the dashboard components and integrating them with the backend API.
+3.  Address any remaining `ImportError` issues by carefully checking the project structure and import statements.
+
+## Important Notes
+
+*   The project structure should be strictly adhered to.
+*   Absolute imports are preferred over relative imports.
+*   All necessary dependencies must be installed in the virtual environment.
+*   The `SECRET_KEY` for JWT authentication should be stored securely in a production environment.
+
+This summary will be updated as the project progresses.

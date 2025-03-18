@@ -1,0 +1,11 @@
+from .auth import router as auth_router
+from .users import router as users_router
+from .mentors import router as mentors_router
+from .mentees import router as mentees_router
+from .courses import router as courses_router
+from .mentorships import router as mentorships_router
+from .reports import router as reports_router
+from .meetings import router as meetings_router
+from .skills import router as skills_router
+from .domains import router as domains_router
+from .admin import router as admin_router
